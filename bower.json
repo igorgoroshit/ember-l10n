@@ -11,8 +11,7 @@
     "ember-addon"
   ],
   "dependencies": {
-    "ember": "1.13.11",
-    "gettext.js": "Cropster/gettext.js#master"
+    "ember": "1.13.11"
   },
   "license": "MIT",
   "private": true,
