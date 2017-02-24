@@ -1,7 +1,26 @@
 {
   "name": "ember-l10n",
+  "version": "1.13.11",
+  "homepage": "https://github.com/igorgoroshit/ember-l10n",
+  "authors": [
+    "Igor Goroshit <igor@webt.co.il>"
+  ],
+  "description": "Ember l10n with gettext",
+  "main": "",
+  "keywords": [
+    "ember-addon"
+  ],
   "dependencies": {
     "ember": "1.13.11",
     "gettext.js": "Cropster/gettext.js#master"
-  }
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
