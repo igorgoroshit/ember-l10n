@@ -1,0 +1,35 @@
+{
+  "name": "gettext.js",
+  "ignore": [
+    "tests",
+    "lib",
+    "*.md",
+    "*.json",
+    "*.yml",
+    "gulpfile.js"
+  ],
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "gettext",
+    "ngettext",
+    "po"
+  ],
+  "author": {
+    "name": "Guillaume Potier",
+    "email": "guillaume@wisembly.com",
+    "url": "http://guillaumepotier.com/"
+  },
+  "license": "MIT",
+  "main": "dist/gettext.js",
+  "homepage": "https://github.com/Cropster/gettext.js",
+  "_release": "e4a48eadd7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e4a48eadd715d9b968993ad98c6adb4e4cdf9ade"
+  },
+  "_source": "git://github.com/Cropster/gettext.js.git",
+  "_target": "master",
+  "_originalSource": "Cropster/gettext.js"
+}
