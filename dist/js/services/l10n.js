@@ -50,7 +50,7 @@ define('ember-l10n/services/l10n', ['exports', 'ember', 'i18n'], function (expor
     // -------------------------------------------------------------------------
     // Dependencies
 
-    ajax: inject.service('l10n-ajax'),
+    //ajax: inject.service('l10n-ajax'),
 
     // -------------------------------------------------------------------------
     // Properties
@@ -489,7 +489,8 @@ define('ember-l10n/services/l10n', ['exports', 'ember', 'i18n'], function (expor
         }
 
         // otherwise load json file from assets
-        ajax.request(url).then(successCallback, failureCallback);
+        //ajax.request(url).then(
+        _ember['default'].$.getJSON(url).then(successCallback, failureCallback);
       });
     }
 

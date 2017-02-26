@@ -52,7 +52,7 @@ export default Service.extend(Evented, {
   // -------------------------------------------------------------------------
   // Dependencies
 
-  ajax: inject.service('l10n-ajax'),
+  //ajax: inject.service('l10n-ajax'),
 
   // -------------------------------------------------------------------------
   // Properties
@@ -485,7 +485,8 @@ export default Service.extend(Evented, {
       }
 
       // otherwise load json file from assets
-      ajax.request(url).then(
+      //ajax.request(url).then(
+      Ember.$.getJSON(url).then(
         successCallback,
         failureCallback
       );
