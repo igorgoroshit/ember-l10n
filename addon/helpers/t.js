@@ -22,6 +22,19 @@ export default Ember.Helper.extend({
       return msgid;
     }
 
+    //replace \r\n with \n (normalize)
+    msgid = msgid.replace(/\r\n/g, "\n");
+    //replace tab with whitespace
+    msgid = msgid.replace(/\t/g, " ");
+    //replace multiple whitespace with one whitespace
+    msgid = msgid.replace(/ {2,}/g, " ");
+    //replace whitespace follow by \n with \n
+    msgid = msgid.replace(/ {1,}\n/g, "\n");
+    //replace \n follwed by whitespace with \n
+    msgid = msgid.replace(/\n {1,}/g, "\n")
+    //normalize for object keys
+    msgid = msgid.replace(/\n/g, "\\n");
+      
     let trans = this.get('l10n').t(msgid, hash);
     return Ember.String.htmlSafe(trans);
   },
