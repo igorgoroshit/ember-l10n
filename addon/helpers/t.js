@@ -33,7 +33,7 @@ export default Ember.Helper.extend({
     //replace \n follwed by whitespace with \n
     msgid = msgid.replace(/\n {1,}/g, "\n")
     //normalize for object keys
-    msgid = msgid.replace(/\n/g, "\\n");
+    //msgid = msgid.replace(/\n/g, "\\n");
       
     let trans = this.get('l10n').t(msgid, hash);
     return Ember.String.htmlSafe(trans);

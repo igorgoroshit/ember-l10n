@@ -36,7 +36,7 @@ define("ember-l10n/helpers/t", ["exports", "ember"], function (exports, _ember) 
       //replace \n follwed by whitespace with \n
       msgid = msgid.replace(/\n {1,}/g, "\n");
       //normalize for object keys
-      msgid = msgid.replace(/\n/g, "\\n");
+      //msgid = msgid.replace(/\n/g, "\\n");
 
       var trans = this.get('l10n').t(msgid, hash);
       return _ember["default"].String.htmlSafe(trans);
